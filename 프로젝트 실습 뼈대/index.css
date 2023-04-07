@@ -1,0 +1,340 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+}
+
+body{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+
+}
+.overlay{
+    width: 50%;
+    height: 100%;
+    background-color: #00c9b7;
+    opacity: 0.8;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .logo
+{
+color: #094b65;
+font-weight: 300;
+font-size:25px;
+}
+
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li
+{
+    list-style: none;
+    margin-left: 20px;}
+    
+
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #095b65;
+    border-radius: 20px;
+}
+#header ul li a:hover,#header ul li a.active
+{
+    background: #095b65;
+    color: #fff;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section #text
+{
+    position: absolute;
+    color:#095b65;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+}
+section #text span
+{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+
+
+.text-warp h2 span{
+    color: #00c9b7;
+    position: relative;
+}
+/* 태그잡고 접근하지 말자 되도록  */
+.text-warp h2 span::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #00c9b7;
+    bottom: -5px;
+}
+
+
+.empty{
+    margin-top: 50px;
+   height:54px;
+}
+
+.profile-section{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 80%;
+}
+
+.profile-picture{
+    width: 30%;
+    margin-right: 60px;
+}
+
+.introduction>h2{
+    width: 70%;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+.introudction p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 16px;
+    width: 70%;
+}
+
+
+
+.frame{
+    width: 100%;
+    position: relative;
+}
+
+.empty-min{
+    height: 20px;
+}
+
+.empty-min2{
+    height: 70px;
+}
+.empty-min3{
+    height: 70px;
+    display: flex;
+    position:absolute ;
+    left: 950px;
+}
+.empty2{
+    margin-top: 500px;
+   width:704px;
+   height:54px;
+   
+}
+
+.empty3{
+    
+    width: 708px;
+    height: 400px;
+    margin:auto;
+}
+
+.empty4{
+    height: 200px;
+}
+
+
+
+.sub-text{
+    position: relative;
+    color: gray;
+    width: max-content;
+    padding-bottom:3px ;
+    border-bottom: 1px solid;
+    
+}
+.text{
+    padding-top: 10px;
+    padding-left: 30px;
+   border-left: 2px solid;
+
+}
+
+.empty5{
+  
+    transform: translateX(100%);
+    padding-left: 300px;
+    border-bottom: 5px solid;
+    width: 30%;
+    padding-top: 30%;
+    
+}
+
+
+
+.drop
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    text-shadow: 1px -1px 3px;
+    filter : drop-shadow(4px 4px 10px #f00);
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 10, 5),
+    8px 10px 5px;
+    
+}
+
+.drop::before{
+    content:"";
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    filter: blur(2px);
+}
+
+.drop ion-icon{
+color: red;
+font-size: 2em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 2000px;
+    padding-top: 30px;
+
+
+}
+
+.container2{
+    display: flex;
+    flex-direction: column}
+
+.img-size{
+   width: 100px;
+   height: 100px;
+
+   background-size: cover;
+    background-image: url(https://th.bing.com/th/id/OIP.NYmudqOdnAJWjDBXKOGbggHaGZ?pid=ImgDet&rs=1);
+}
+
+.img-size2{
+    background-size: 100px;
+    background-image: url(https://play-lh.googleusercontent.com/HOwb9RHtv3AsCEyB-v1ni4z1TMgjqUJRP9FWFLNVsG-D8xoxxtfjGigzudTgSs0l8_g);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+    
+
+.img-size3{
+    background-size: 100px;
+    background-image: url(https://t1.daumcdn.net/cfile/tistory/12361F3C4FE4717319);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+.img-size4{
+    background-size: 100px;
+    background-image: url(https://play-lh.googleusercontent.com/YuB811yIABwkqgTr82XnG79VtfTwJ5dPUUSIs8Oe9q5-aJv6dk-z3BirQEyo5a59Nw);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.img-size5{
+    background-size: 80px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1051/1051377.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.box-contents{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    border-bottom: 1px solid;
+    height: 900px;
+    align-content: center; 
+    /* align-content의 경우 flex-wrap상태일때만 사용 */
+    justify-content: center;
+    /* 자식 요소를 좌측 정렬 */
+}
+
+.box{
+    width:366px;
+    height:366px;
+    border:1px solid;
+    margin: 10px;
+    box-shadow:10px 10px 10px rgb(172, 172, 172) ;
+}
+
+
+.contents{
+    margin: auto;width: 708px;
+}
+

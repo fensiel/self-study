@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eee;
+    gap: 30px;
+}
+.drop
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    text-shadow: 1px -1px 3px;
+    filter : drop-shadow(4px 4px 10px #f00);
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 10, 5),
+    8px 10px 5px;
+    
+}
+
+.drop::before{
+    content:"";
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    filter: blur(2px);
+}
+
+.drop ion-icon{
+color: red;
+font-size: 2em;
+
+}
